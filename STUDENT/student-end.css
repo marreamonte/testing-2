@@ -1,0 +1,34 @@
+/*---------- NAVBAR ----------*/
+.container-fluid {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.nav-item.dropdown .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+
+.custom-navbar {
+  background-color: #615EFC; /* Replace with your desired color */
+  color: white;
+}
+
+.custom-navbar .nav-link {
+  color: white; /* Set link color to white */
+}
+
+.custom-navbar .nav-link.active {
+  color: white !important; /* Change the active link color to yellow */
+}
+
+.custom-navbar .nav-link:hover {
+  color: #F3C623; /* Change color on hover if needed */
+}
+
+/*---------- END OF NAVBAR ----------*/
