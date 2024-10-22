@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,38 +13,60 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg p-3" style="background-color: #615EFC;">
+  <nav class="navbar navbar-expand-lg p-1" style="background-color: #615EFC;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <!-- Brand Logo and Text -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/images/svit_logo.png" alt="Logo" width="38" height="38" class="d-inline-block align-text-top" style="border-radius: 20px;">
+        <div class="ms-2 d-none d-md-block">
+          <span style="font-size: large; font-weight: bold; color: white;">St. Vincent Institute of Technology</span><br>
+          <p style="font-size: 15px; margin: 0; color: white; letter-spacing: 1px;">Student Management System</p>
+        </div>
+      </a>
+      <!-- Hamburger menu button -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
-      <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto ">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <!-- Text appears here only in mobile view -->
+        <div class="d-md-none ms-2 mb-2">
+          <span style="font-size: large; font-weight: bold; color: white;">St. Vincent Institute of Technology</span><br>
+          <p style="font-size: 15px; margin: 0; color: white; letter-spacing: 1px;">Student Management System</p>
+        </div>
+        <!-- Navigation Links -->
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+            <a class="nav-link mx-2" aria-current="page" href="student-end.html" style="margin-top: 10px;">Dashboard</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2" href="#">Products</a>
+            <a class="nav-link mx-2" href="student-subjects.html" style="margin-top: 10px;">Subject Classes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2" href="#">Pricing</a>
+            <a class="nav-link mx-2 " href="student-payments.html" style="margin-top: 10px; color: white;">Payment Logs</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Company
+          <!-- Dropdown Navigation Link -->
+          <li class="nav-item dropdown active">
+            <a class="nav-link mx-2 dropdown-toggle" href="student-account.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 10px; color: white;">
+              Account
             </a>
+            <!-- Contents of Dropdown -->
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Blog</a></li>
-              <li><a class="dropdown-item" href="#">About Us</a></li>
-              <li><a class="dropdown-item" href="#">Contact us</a></li>
+              <li><a class="dropdown-item" href="#">SMS Profile</a></li>
+              <li><a class="dropdown-item" href="#">SMS Security</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="#" style="color: red;">Log Out</a></li>
             </ul>
           </li>
         </ul>
       </div>
     </div>
-    </nav>
+  </nav>
+
+  <div class="page-title mb-4" style="margin:15px;">
+    <!--Subject Classes Title -->
+    <h2 style="color: #615EFC; font-weight: bold; margin-right: 20px; padding-left: 50px;">Subject Classes</h2>
+    <hr style="margin-top: 0;">
+  </div>
 
   <div class="card" style="width: 18rem;">
     <div class="card-body">
