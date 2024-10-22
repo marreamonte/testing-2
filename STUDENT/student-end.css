@@ -14,21 +14,48 @@
   display: none;
 }
 
-.custom-navbar {
-  background-color: #615EFC; /* Replace with your desired color */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5); /* Lighten the border color */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.nav-link {
+  color: white; /* Keep the text white */
+  transition: background-color 0.3s ease, font-weight 0.3s ease; /* Smooth transition for both background and font-weight */
+  font-weight: normal;
+}
+
+.nav-link:hover, .nav-link:focus {
   color: white;
+  background-color: rgba(0, 0, 0, 0.1); /* Darker background on hover */
+  border-radius: 10px; /* Optional: make the background slightly rounded */
 }
 
-.custom-navbar .nav-link {
-  color: white; /* Set link color to white */
+.nav-link.active {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2); /* Even darker background when active */
+  border-radius: 10px;
+  font-weight: bold;
 }
 
-.custom-navbar .nav-link.active {
-  color: white !important; /* Change the active link color to yellow */
+.dropdown-toggle:active,
+.dropdown-toggle:focus,
+.dropdown-toggle.show {
+  background-color: #4b48dc; /* Same darker background for active dropdown */
+  font-weight: bold; /* Keep it bold */
 }
 
-.custom-navbar .nav-link:hover {
-  color: #F3C623; /* Change color on hover if needed */
+@media (max-width: 767px) {
+  .nav-link {
+    width: 100%; /* Make each nav item take up full width */
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center;
+  }
 }
 
 /*---------- END OF NAVBAR ----------*/
